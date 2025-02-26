@@ -1,5 +1,7 @@
 # **Compression using LZ77**
 
+---
+
 ## **Description of Work Done**
 I implemented LZ77 from scratch using Java. During implementation, I tried to make my code modular, dividing it into three classes: `Compressor`, `Decompressor`, and `IO`.
 
