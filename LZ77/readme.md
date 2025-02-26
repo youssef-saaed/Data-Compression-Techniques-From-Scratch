@@ -27,23 +27,23 @@ $ java LZ77.java help
 
 ### **Test Case 1: Online article about sleeping**
 **Before Compression:**  
-!<img src="assets/before1.png" alt="Before Compression" width="350px">
+<img src="assets/before1.png" alt="Before Compression" width="350px">  
 **After Compression:**  
-![After Compression](assets/after1.png)  
+<img src="assets/after1.png" alt="After Compression" width="350px">  
 **Compression Ratio:** 13 : 20, 65% of original size
 
 ### **Test Case 2: 'B' repeated 173 times**
 **Before Compression:**  
-![Before Compression](assets/before2.png)  
+<img src="assets/before2.png" alt="Before Compression" width="350px">  
 **After Compression:**  
-![After Compression](assets/after2.png)  
+<img src="assets/after2.png" alt="After Compression" width="350px">  
 **Compression Ratio:** 17 : 173, 10% of original size
 
 ### **Test Case 3: Short sequence from repeated different 4 characters**
 **Before Compression:**  
-![Before Compression](assets/before3.png)  
+<img src="assets/before3.png" alt="Before Compression" width="350px">  
 **After Compression:**  
-![After Compression](assets/after3.png)  
+<img src="assets/after3.png" alt="After Compression" width="350px">  
 **Compression Ratio:** 21 : 37, 57% of original size
 
 ---
