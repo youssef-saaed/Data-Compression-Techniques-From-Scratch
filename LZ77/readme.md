@@ -27,7 +27,7 @@ $ java LZ77.java help
 
 ### **Test Case 1: Online article about sleeping**
 **Before Compression:**  
-<img src="assets/before1.png" alt="Before Compression" width="200px">
+|<img src="assets/before1.png" alt="Before Compression" width="350px">
 **After Compression:**  
 ![After Compression](assets/after1.png)  
 **Compression Ratio:** 13 : 20, 65% of original size
