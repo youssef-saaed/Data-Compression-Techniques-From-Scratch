@@ -4,7 +4,7 @@ In this repository, I will implement some data compression algorithms from scrat
 
 - [LZ77](./LZ77)
 - [LZ78](./LZ78)
-- [Standard Huffman](./Standard Huffman)
+- [Standard Huffman](./Standard%20Huffman)
 
 There is a README.md for each algorithm in its directory.
   
