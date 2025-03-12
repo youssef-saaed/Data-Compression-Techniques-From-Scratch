@@ -1,0 +1,1 @@
+Data compression is a crucial part of modern computing. Huffman encoding is a lossless algorithm that efficiently compresses data by assigning shorter codes to more frequent characters and longer codes to less frequent ones, reducing overall storage space and transmission time in computer networks.

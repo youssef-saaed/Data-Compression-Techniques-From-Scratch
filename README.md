@@ -1,7 +1,12 @@
 # Data Compression Techniques From Scratch
-In this repository, I will implement some data compression algorithms from scratch and. At this time the available algorithms implementation are:
-- LZ77
 
-There is readme.md for each algorithm in its directory
+In this repository, I will implement some data compression algorithms from scratch. At this time, the available algorithm implementations are:
+
+- [LZ77](./LZ77)
+- [LZ78](./LZ78)
+- [Standard Huffman](./Standard Huffman)
+
+There is a README.md for each algorithm in its directory.
   
 **Developed by Yousef Said**
+
