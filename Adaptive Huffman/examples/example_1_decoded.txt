@@ -1,0 +1,1 @@
+The quick brown fox jumps over the lazy dog multiple times to test Huffman encoding efficiency in data compression algorithms.
