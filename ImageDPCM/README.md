@@ -6,10 +6,10 @@ This repository contains a Java implementation of the Differential Pulse Code Mo
 
 The core idea behind DPCM involves these steps:
 
-1.  **Prediction:** A predictor estimates the value of the current pixel based on the values of previously encoded (and thus, available at the decoder) neighboring pixels.
-2.  **Difference Calculation:** The difference (or prediction error) between the actual pixel value and the predicted value is calculated.
-3.  **Quantization:** The prediction error is then quantized to a limited number of levels. This is a lossy step that introduces compression.
-4.  **Encoding:** The quantized prediction error is encoded and stored or transmitted.
+1. **Prediction:** A predictor estimates the value of the current pixel based on the values of previously encoded (and thus, available at the decoder) neighboring pixels.
+2. **Difference Calculation:** The difference (or prediction error) between the actual pixel value and the predicted value is calculated.
+3. **Quantization:** The prediction error is then quantized to a limited number of levels. This is a lossy step that introduces compression.
+4. **Encoding:** The quantized prediction error is encoded and stored or transmitted.
 
 This implementation includes the following components:
 
@@ -31,7 +31,7 @@ The `DPCM.java` class provides a command-line interface for encoding and decodin
 
 ```bash
 java DPCM.java encode <original file name> <encoded file name> <quantization levels> <predictor>
-````
+```
 
 **Decoding:**
 
@@ -46,49 +46,31 @@ The `./examples` directory contains the original image and the results of encodi
 **Original Image:**
 ![Original Image](./examples/image.jpg)
 
-**Decoded Images:**
+---
 
-**First-Order Predictor:**
+### Decoded Images (Comparison by Quantization Level)
 
-  * First-Order Predictor, 2 bits
-    ![First-Order Predictor - 2 bits](./examples/decoded_first_order_2.jpg)
-    
+#### 2-bit Quantization
 
-  * First-Order Predictor, 8 bits
-    ![First-Order Predictor - 8 bits](./examples/decoded_first_order_8.jpg)
-    
+| First-Order Predictor                                       | Second-Order Predictor                                        | Adaptive Predictor                                    |
+| ----------------------------------------------------------- | ------------------------------------------------------------- | ----------------------------------------------------- |
+| ![First-Order 2 bits](./examples/decoded_first_order_2.jpg) | ![Second-Order 2 bits](./examples/decoded_second_order_2.jpg) | ![Adaptive 2 bits](./examples/decoded_adaptive_2.jpg) |
 
-  * First-Order Predictor, 16 bits
-    ![First-Order Predictor - 16 bits](./examples/decoded_first_order_16.jpg)
+#### 8-bit Quantization
 
-  * First-Order Predictor, 32 bits
-    ![First-Order Predictor - 32 bits](./examples/decoded_first_order_32.jpg)
-    
+| First-Order Predictor                                       | Second-Order Predictor                                        | Adaptive Predictor                                    |
+| ----------------------------------------------------------- | ------------------------------------------------------------- | ----------------------------------------------------- |
+| ![First-Order 8 bits](./examples/decoded_first_order_8.jpg) | ![Second-Order 8 bits](./examples/decoded_second_order_8.jpg) | ![Adaptive 8 bits](./examples/decoded_adaptive_8.jpg) |
 
-**Second-Order Predictor:**
+#### 16-bit Quantization
 
-  * Second-Order Predictor, 2 bits
-    ![Second-Order Predictor - 2 bits](./examples/decoded_second_order_2.jpg)
+| First-Order Predictor                                         | Second-Order Predictor                                          | Adaptive Predictor                                      |
+| ------------------------------------------------------------- | --------------------------------------------------------------- | ------------------------------------------------------- |
+| ![First-Order 16 bits](./examples/decoded_first_order_16.jpg) | ![Second-Order 16 bits](./examples/decoded_second_order_16.jpg) | ![Adaptive 16 bits](./examples/decoded_adaptive_16.jpg) |
 
-  * Second-Order Predictor, 8 bits
-    ![Second-Order Predictor - 8 bits](./examples/decoded_second_order_8.jpg)
+#### 32-bit Quantization
 
-  * Second-Order Predictor, 16 bits
-    ![Second-Order Predictor - 16 bits](./examples/decoded_second_order_16.jpg)
+| First-Order Predictor                                         | Second-Order Predictor                                          | Adaptive Predictor                                      |
+| ------------------------------------------------------------- | --------------------------------------------------------------- | ------------------------------------------------------- |
+| ![First-Order 32 bits](./examples/decoded_first_order_32.jpg) | ![Second-Order 32 bits](./examples/decoded_second_order_32.jpg) | ![Adaptive 32 bits](./examples/decoded_adaptive_32.jpg) |
 
-  * Second-Order Predictor, 32 bits
-    ![Second-Order Predictor - 32 bits](./examples/decoded_second_order_32.jpg)
-
-**Adaptive Predictor:**
-
-  * Adaptive Predictor, 2 bits
-    ![Adaptive Predictor - 2 bits](./examples/decoded_adaptive_2.jpg)
-
-  * Adaptive Predictor, 8 bits
-    ![Adaptive Predictor - 8 bits](./examples/decoded_adaptive_8.jpg)
-
-  * Adaptive Predictor, 16 bits
-    ![Adaptive Predictor - 16 bits](./examples/decoded_adaptive_16.jpg)
-
-  * Adaptive Predictor, 32 bits
-    ![Adaptive Predictor - 32 bits](./examples/decoded_adaptive_32.jpg)
