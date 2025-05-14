@@ -7,6 +7,7 @@ In this repository, I will implement some data compression algorithms from scrat
 - [Standard Huffman](./Standard%20Huffman)
 - [Adaptive Huffman](./Adaptive%20Huffman)
 - [Vector Quantization](./VectorQuantization)
+- [Image DPCM](./ImageDPCM/)
 
 There is a README.md for each algorithm in its directory.
   
