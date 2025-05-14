@@ -44,6 +44,7 @@ java DPCM.java decode <encoded file name> <decoded file name>
 The `./examples` directory contains the original image and the results of encoding and decoding it using different predictors and quantization levels.
 
 **Original Image:**
+
 ![Original Image](./examples/image.jpg)
 
 ---
