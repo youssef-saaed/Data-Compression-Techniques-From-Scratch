@@ -1,4 +1,3 @@
-````markdown
 # Image Differential Pulse Code Modulation (DPCM) Implementation
 
 ## Overview
